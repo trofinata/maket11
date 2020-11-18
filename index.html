@@ -14,9 +14,9 @@
 					<li class="nav-item"><a href="#">Наши перспективы</a></li>  
 					<li class="nav-item"><a href="#">Все о рекламных местах</a></li>
 				</ul>
-				<a href="tel">+7 (999) 665 778 66</a>
-			</nav>
-			<a href="#">Заказать рекламное место</a>
+				<a href="tel:+799966577866">+7 (999) 665 778 66</a>
+				<a href="#">Заказать рекламное место</a>
+			</nav>			
 		</header>
 		<main>
 			<h1>Заказать рекламные места на сайте гипермаркета № 1</h1>
@@ -26,7 +26,7 @@
 				<img src="img/promo-img.png" alt="Промо" width="679" height="361">
 				<form action="#" method="POST">
 					<label for="phone1">Номер телефона</label>
-					<input type="tel" name="phone" id="phone1" placeholder="+7">
+					<input type="tel" name="phone" id="phone1" placeholder="Номер телефона">
 					<button type="submit">Заказать</button>
 				</form>					
 			</section>
@@ -39,13 +39,15 @@
 					<dd>Более 25 000</dd>
 					<dt>просмотров в месяц</dt>
 					<dd>Более 200 000</dd>
+				</dl>
+				<dl>
 					<dt>Крупных городов РФ</dt>
 					<dd>7</dd>
 					<dt>Хорошая конверсия в продажи от уникальных посетителей</dt>
 					<dd>7,61%</dd>
 					<dt>Низкий показатель отказов</dt>
 					<dd>26,16%</dd>
-					<dt>Высокий уровень SCAT (по 5-ти бальной шкале)</dt>
+					<dt>Высокий уровень SCAT <span>(по 5-ти бальной шкале)</span></dt>
 					<dd>4,9%</dd>
 					<dt>Отличный рейтинг на Flamp</dt>
 					<dd>4,2</dd>
@@ -60,25 +62,35 @@
 			<section class="indicators">
 				<h2>Показатели по городам</h2>
 				<ul class="city-list">
-					<li class="city-item"><button type="button">Все города</button></li>
-					<li class="city-item"><button type="button">Екатеринбург</button></li>
-					<li class="city-item"><button type="button">Санкт-Петербург</button></li>
-					<li class="city-item"><button type="button">Новосибирск</button></li>
-					<li class="city-item"><button type="button">Самара</button></li>
+					<li class="city-item"><a href="#">Все города</a></li>
+					<li class="city-item"><a href="#">Екатеринбург</a></li>
+					<li class="city-item"><a href="#">Санкт-Петербург</a></li>
+					<li class="city-item"><a href="#">Новосибирск</a></li>
+					<li class="city-item"><a href="#">Самара</a></li>
 				</ul>
-				<h3>Возраст пользователей</h3>
-				<dl>
-					<dt>18‑24 года</dt>
-					<dd><meter value="9" max="100" title="9%">9%</meter></dd>
-					<dt>25‑34 года</dt>
-					<dd><meter value="40" max="100" title="40%">40%<</meter>/dd>
-					<dt>35‑44 года</dt>
-					<dd><meter value="23" max="100" title="23%">23%</meter></dd>
-					<dt>45-54 года</dt>
-					<dd><meter value="15" max="100" title="15%">15%</meter></dd>
-					<dt>55 лет и старше</dt>
-					<dd><meter value="12" max="100" title="12%">12%</meter></dd>
-				</dl>
+				<section>
+					<h3>Возраст пользователей</h3>					
+					<p>
+						<label for="age-category1">18‑24 года</label>
+						<meter id="age-category1" min="0" max="100" value="8">9%</meter> 9%
+					</p>
+					<p>
+						<label for="age-category2">25‑34 года</label>
+						<meter id="age-category2" min="0" max="100" value="40">40%</meter> 40%
+					</p>
+					<p>
+						<label for="age-category3">35‑44 года</label>
+						<meter id="age-category3" min="0" max="100" value="23">23%</meter> 23%
+					</p>
+					<p>
+						<label for="age-category4">45-54 года</label>
+						<meter id="age-category4" min="0" max="100" value="15">15%</meter> 15%
+					</p>
+					<p>
+						<label for="age-category5">55 лет и старше</label>
+						<meter id="age-category5" min="0" max="100" value="12">12%</meter> 12%
+					</p>	
+				</section>				
 				<dl>
 					<dt>среднее время пребывания на сайте</dt>
 					<dd>5:46 минут</dd>
@@ -86,81 +98,77 @@
 					<dd>7:39 минут</dd>
 					<dt>Отказы за все время работы сайта</dt>
 					<dd>26,16%</dd>
-				</dl>								
-				<form action="#" method="POST">
-					<p>Заказать рекламу в этом городе</p>
-					<label for="phone2">Номер телефона</label>
-					<input type="tel" name="phone" id="phone2" placeholder="+7">
-					<button type="submit">Заказать</button>
-				</form>	
+				</dl>
+				<section>
+					<h3>Заказать рекламу в этом городе</h3>							
+					<form action="#" method="POST">						
+						<label for="phone2">Номер телефона</label>
+						<input type="tel" name="phone" id="phone2" placeholder="Номер телефона">
+						<button type="submit">Заказать</button>
+					</form>	
+				</section>
 			</section>
-			<article class="raiting">
+			<section class="raiting">
 				<h2>Рейтинг рекламных площадок</h2>
 				<p>Рейтинг, составленный Jandex в 2020 году показывает, что эффективность рекламы на сайтах растет с каждым годом. Яркая и запоминающаяся реклама на сайте охватывает больший процент целевой аудитории и показывает отличную конверсию по сравнению с другими рекламными площадками.</p>
 				<table>
-					<tr><th>2020</th>  <th>2015</th>  <th>Площадка</th> <th></th>  <th>Процент пользователей</th></tr>
-					<tr><td>1</td>  <td>3</td>  <td>Сайты</td>  <td>82%</td> <td>Рост показателя</td></tr>
-					<tr><td>2</td>  <td>4</td>  <td>Социальные сети</td>  <td>80%</td> <td>Рост показателя</td></tr>
-					<tr><td>3</td>  <td>2</td>  <td>Наружная реклама</td>  <td>62%</td> <td>Падение показателя</td></tr>
-					<tr><td>4</td>  <td>1</td>  <td>Телевидение</td>  <td>40%</td> <td>Падение показателя</td></tr>
-					<tr><td>5</td>  <td>7</td>  <td>Реклама на радио</td>  <td>35%</td> <td>Рост показателя</td></tr>
-					<tr><td>6</td>  <td>5</td>  <td>Пресса</td>  <td>30%</td> <td>Падение показателя</td></tr>
-					<tr><td>7</td>  <td>6</td>  <td>Промо-акции</td>  <td>15%</td> <td>Падение показателя</td></tr>
+					<tr><th>2020</th>  <th>2015</th>  <th>Площадка</th> <th>Процент пользователей</th></tr>
+					<tr><td><b>1</b></td>  <td>3</td>  <td>Сайты</td>  <td>82% <span><span>Рост показателя</span></span></td></tr>
+					<tr><td><b>2</b></td>  <td>4</td>  <td>Социальные сети</td>  <td>80% <span><span>Рост показателя</span></span></td></tr>
+					<tr><td><b>3</b></td>  <td>2</td>  <td>Наружная реклама</td>  <td>62% <span><span>Падение показателя</span></span></td></tr>
+					<tr><td><b>4</b></td>  <td>1</td>  <td>Телевидение</td>  <td>40% <span><span>Падение показателя</span></span></td></tr>
+					<tr><td><b>5</b></td>  <td>7</td>  <td>Реклама на радио</td>  <td>35% <span><span>Рост показателя</span></span></td></tr>
+					<tr><td><b>6</b></td>  <td>5</td>  <td>Пресса</td>  <td>30% <span><span>Падение показателя</span></span></td></tr>
+					<tr><td><b>7</b></td>  <td>6</td>  <td>Промо-акции</td>  <td>15% <span><span>Падение показателя</span></span></td></tr>
 				</table>
-			</article>
+			</section>
 			<section class="places">
 				<h2>Рекламные места</h2>
 				<ul class="places-list">
-					<li class="places-item">
-						<figure>
-							<figcaption>Преимущества рекламного места №1</figcaption>						
-							<p>Баннер на главной странице</p>
-							<ol>
-								<li>виден при открытии главной страницы</li>
-								<li>есть возможность настроить отдельную страницу для всего ассортимента товаров при клике на баннер</li>
-								<li>хорошо кликабельный баннер</li>
-							</ol>
-							<img src="img/place-img-1.png" alt="photo" width="554" height="294">
-						</figure>
+					<li class="places-item">						
+						<h3>Преимущества рекламного места №1</h3>						
+						<p>Баннер на главной странице</p>
+						<ul>
+							<li>виден при открытии главной страницы</li>
+							<li>есть возможность настроить отдельную страницу для всего ассортимента товаров при клике на баннер</li>
+							<li>хорошо кликабельный баннер</li>
+						</ul>
+						<img src="img/place-img-1.png" alt="photo" width="554" height="294">						
 					</li>
-					<li class="places-item">
-						<figure>
-							<figcaption>Преимущества рекламного места №2</figcaption>						
-							<p>Баннер на главной странице</p>
-							<ol>
-								<li>виден при открытии главной страницы</li>
-								<li>самый высокий показатель кликабельности на рекламу</li>
-								<li>есть возможность настроить отдельную страницу для всего ассортимента товаров при клике на баннер</li>
-							</ol>
-							<img src="img/place-img-2.png" alt="photo" width="554" height="294">
-						</figure>
+					<li class="places-item">						
+						<h3>Преимущества рекламного места №2</h3>						
+						<p>Баннер на главной странице</p>
+						<ul>
+							<li>виден при открытии главной страницы</li>
+							<li>самый высокий показатель кликабельности на рекламу</li>
+							<li>есть возможность настроить отдельную страницу для всего ассортимента товаров при клике на баннер</li>
+						</ul>
+						<img src="img/place-img-2.png" alt="photo" width="554" height="294">					
 					</li>
-					<li class="places-item">	
-						<figure>		
-							<figcaption>Преимущества рекламного места №3</figcaption>								
-							<p>Баннер на главной странице</p>
-							<ol>
-								<li>попадает в поле зрения пользователя сразу при переходе на страницу</li>
-								<li>вмещает больший объем информации</li>
-								<li>есть возможность кастомизации оформления на протяжении всего срока действия рекламы</li>
-							</ol>
-							<img src="img/place-img-3.png" alt="photo" width="554" height="294">
-						</figure>
+					<li class="places-item">								
+						<h3>Преимущества рекламного места №3</h3>								
+						<p>Баннер на главной странице</p>
+						<ul>
+							<li>попадает в поле зрения пользователя сразу при переходе на страницу</li>
+							<li>вмещает больший объем информации</li>
+							<li>есть возможность кастомизации оформления на протяжении всего срока действия рекламы</li>
+						</ul>
+						<img src="img/place-img-3.png" alt="photo" width="554" height="294">						
 					</li>
-				</ul>			
-				<form action="#" method="POST">
-					<p>Заказать рекламное место</p>
-					<label for="phone3">Номер телефона</label>
-					<input type="tel" name="phone" id="phone3" placeholder="+7">
-					<button type="submit">Заказать</button>
-				</form>	
+				</ul>
+				<section>
+					<h3>Заказать рекламное место</h3>			
+					<form action="#" method="POST">						
+						<label for="phone3">Номер телефона</label>
+						<input type="tel" name="phone" id="phone3" placeholder="Номер телефона">
+						<button type="submit">Заказать</button>
+					</form>	
+				</section>
 			</section>
 		</main>
-		<footer>
-			<ul class="contact-list">
-				<li class="contact-item"><a href="tel">+7 (999) 665 778 66</a></li>
-				<li class="contact-item"><a href="mailto:info@marketing.ru">info@marketing.ru</a></li>
-			</ul>
+		<footer>			
+			<a href="tel:+799966577866">+7 (999) 665 778 66</a>
+			<a href="mailto:info@marketing.ru">info@marketing.ru</a>			
 		</footer>
 	</body>
 </html>
